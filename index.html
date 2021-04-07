@@ -5,14 +5,138 @@
   <title>Samir Makhani - Presidential Candidate 2028</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
 <link rel="stylesheet" href="./style.css">
+	<meta property="og:title" content="Samir Makhani - Mike Pence 2028 Presidential Candidate" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://samir.ist" />
+<meta property="og:image" itemprop="image" content="https://s3.amazonaws.com/vip.xn--5k8hoq.samir.ist/sm-Screen_Shot_2021-03-21_at_6.03.40_PM.png" />
 
 </head>
 <body>
-<!-- partial:index.partial.html -->
-<div class="bg"></div>
-<!-- partial -->
-  <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js'></script><script  src="./script.js"></script>
 
+  <div class="spinner">
+    ⚡️
+  </div>
+
+	<div class="starfield">
+	  <span></span>
+	  <span></span>
+	  <span></span>
+	  <span></span>
+	  <span></span>
+	  <span></span>
+	  <span></span>
+	  <span></span>
+	</div>
+
+	<style>
+
+    .spinner {
+      /*height:100%;*/
+      font-size:5vw;
+      position:absolute;
+      top:50vh;
+      left:47.5vw;
+      animation: spin 2.5s ease-in-out infinite alternate;
+    }
+
+    @keyframes spin {
+      0% {
+        transform: rotateZ(0) scale(0.5);
+        transform-origin: 0deg;
+      }
+      100% {
+        transform: rotateZ(360deg) scale(1.5);
+        transform-origin: -18000deg;
+      }
+    }
+
+
+		@keyframes starfieldRotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+body, html {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: #000;
+}
+
+.starfield {
+  display: block;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position:relative
+}
+
+.starfield > * {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+
+  background-size: 200px 200px;
+  background-image: radial-gradient(
+      3px 3px at 40px 60px,
+      #ccc,
+      rgba(0, 0, 0, 0)
+    ),
+    radial-gradient(2px 2px at 20px 50px, #ddd, rgba(0, 0, 0, 0)),
+    radial-gradient(2px 2px at 30px 100px, #eee, rgba(0, 0, 0, 0)),
+    radial-gradient(2px 2px at 40px 60px, #fff, rgba(0, 0, 0, 0)),
+    radial-gradient(2px 2px at 110px 90px, #ccc, rgba(0, 0, 0, 0)),
+    radial-gradient(2px 2px at 190px 150px, #ddd, rgba(0, 0, 0, 0)),
+    radial-gradient(2px 2px at 90px 123px, #ddd, rgba(0, 0, 0, 0)),
+    radial-gradient(2px 2px at 25px 200px, #ddd, rgba(0, 0, 0, 0));
+  background-repeat: repeat;
+  transform-origin: 50% 50%;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-name: starfieldRotate
+}
+
+.starfield > *:nth-child(1) {
+  animation-duration: 10s;
+}
+
+.starfield > *:nth-child(2) {
+  animation-duration: 12s;
+}
+
+.starfield > *:nth-child(3) {
+  animation-duration: 15s;
+}
+
+.starfield > *:nth-child(4) {
+  animation-duration: 21s;
+}
+
+.starfield > *:nth-child(5) {
+  animation-duration: 24s;
+}
+
+.starfield > *:nth-child(6) {
+  animation-duration: 29s;
+}
+
+.starfield > *:nth-child(7) {
+  animation-duration: 32s;
+}
+
+.starfield > *:nth-child(8) {
+  animation-duration: 36s;
+}
+	</style>
 
 </body>
 </html>
+
+
+
